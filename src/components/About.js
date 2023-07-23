@@ -3,11 +3,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
-// useEffect
+// useEffect, useState
 import { useEffect, useState } from 'react';
+// useContext
+import { useContext } from 'react';
+import { deviceContext } from '../contexts/deviceContext';
 
 
 const About = () => {
+  const initial = useContext(deviceContext);
   const [meme, setMeme] = useState("https://pd-beamliving-cd.beamliving.com/-/media/bu-to-ch/cat-meme-netflix-funny-1000x666.png");
   useEffect(() => {
     const fetchMemes = async () => {
@@ -26,7 +30,7 @@ const About = () => {
           {/* img */}
           <motion.div
             variants={fadeIn('right', 0.3)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='hidden lg:block flex-1 bg-about bg-contain bg-no-repeat h-[100%] mix-blend-lighten bg-center'>
@@ -34,7 +38,7 @@ const About = () => {
           {/* text */}
           <motion.div
             variants={fadeIn('left', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'>

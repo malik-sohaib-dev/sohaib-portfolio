@@ -7,15 +7,20 @@ import { fadeIn } from '../variants';
 import img1 from '../assets/AI Doggo.webp';
 import img2 from '../assets/Ecommerce React.webp';
 import img3 from '../assets/Visme JS.webp';
+// useContext
+import { useContext } from 'react';
+import { deviceContext } from '../contexts/deviceContext';
+
 
 const Work = () => {
+  const initial = useContext(deviceContext);
   return (
     <section className='section' id='work'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <motion.div
             variants={fadeIn('right', 0.3)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
@@ -36,6 +41,7 @@ const Work = () => {
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
               <img
+                loading='lazy'
                 className='group-hover:scale-125 transition-all duration-500'
                 src={img1}
                 alt='Porfolio 1'
@@ -50,37 +56,41 @@ const Work = () => {
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'
               >
-                <span className='text-lg lg:text-3xl text-white '>AI Dog Image Generator Concept Design</span>
+                <span className='text-sm lg:text-3xl text-white '>AI Dog Image Generator Concept Design</span>
               </div>
             </div>
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-10'>
             {/* Project 2 */}
             <a href='https://clothing-store-sohaib.vercel.app/' target='_blank'>
               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
-              {/* overlay */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              {/* img */}
-              <img
-                className='group-hover:scale-125 transition-all duration-500' src={img2} alt='Porfolio 1' />
-              {/* pretitle */}
-              <div
-                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'
-              >
-                <span className='text-gradient'>Web Development</span>
+                {/* overlay */}
+                <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+                {/* img */}
+                <img
+                  loading='lazy'
+                  className='group-hover:scale-125 transition-all duration-500'
+                  src={img2}
+                  alt='Porfolio 1'
+                />
+                {/* pretitle */}
+                <div
+                  className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'
+                >
+                  <span className='text-gradient'>Web Development</span>
+                </div>
+                {/* title */}
+                <div
+                  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'
+                >
+                  <span className='text-sm lg:text-3xl text-white '>Clothing Store using React</span>
+                </div>
               </div>
-              {/* title */}
-              <div
-                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'
-              >
-                <span className='text-lg lg:text-3xl text-white '>Clothing Store using React</span>
-              </div>
-            </div>
             </a>
             {/* Project 3 */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -88,7 +98,11 @@ const Work = () => {
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
               <img
-                className='group-hover:scale-125 transition-all duration-500' src={img3} alt='Porfolio 1' />
+                loading='lazy'
+                className='group-hover:scale-125 transition-all duration-500'
+                src={img3}
+                alt='Porfolio 1'
+              />
               {/* pretitle */}
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'
@@ -99,7 +113,7 @@ const Work = () => {
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'
               >
-                <span className='text-lg lg:text-3xl text-white '>Visme clone with pure HTML, CSS & JS</span>
+                <span className='text-sm lg:text-3xl text-white '>Visme clone with pure HTML, CSS & JS</span>
               </div>
             </div>
           </motion.div>

@@ -5,8 +5,12 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 // Email sender
 import emailjs from '@emailjs/browser';
+// useContext
+import { useContext } from 'react';
+import { deviceContext } from '../contexts/deviceContext';
 
 const Contact = () => {
+  const initial = useContext(deviceContext);
   const form = useRef();
   const submit = useRef();
 
@@ -33,7 +37,7 @@ const Contact = () => {
           {/* text */}
           <motion.div
             variants={fadeIn('right', 0.3)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex justify-start items-center'
@@ -49,7 +53,7 @@ const Contact = () => {
           {/* form */}
           <motion.form ref={form} onSubmit={sendEmail}
             variants={fadeIn('left', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>

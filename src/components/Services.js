@@ -5,6 +5,10 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+// useContext
+import { useContext } from 'react';
+import { deviceContext } from '../contexts/deviceContext';
+
 
 // Services data
 const services = [
@@ -26,6 +30,7 @@ const services = [
 ];
 
 const Services = () => {
+  const initial = useContext(deviceContext);
   return (
     <section className='section' id='services'>
       <div className='container mx-auto'>
@@ -33,7 +38,7 @@ const Services = () => {
           {/* text & image */}
           <motion.div
             variants={fadeIn('right', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten lg:bg-contain mb-12 lg:mb-0 '>
@@ -46,7 +51,7 @@ const Services = () => {
           {/* services */}
           <motion.div
             variants={fadeIn('left', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'>

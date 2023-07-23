@@ -12,24 +12,12 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 // link
 import { Link } from 'react-scroll';
-// useState and useEffect
-import { useState, useEffect } from 'react';
+// useContext
+import { useContext } from 'react';
+import { deviceContext } from '../contexts/deviceContext';
 
 const Banner = () => {
-
-  const [dir, setDir] = useState('down');
-
-  useEffect(() => {
-    if (window.innerWidth >= 950) setDir('up');
-    else setDir('down');
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 950) setDir('up');
-      else setDir('down');
-    });
-  }, []);
-
-
+  const initial = useContext(deviceContext);
 
   return (
     <section className='min-h-[50vh] mb-10 lg:min-h-[75vh] max-h-[100vh] flex items-center' id='home'>
@@ -39,8 +27,8 @@ const Banner = () => {
           <div className='flex-1 text-center font-secondary lg:text-left'>
             {/* Name */}
             <motion.h1
-              variants={fadeIn(dir, 0.3)}
-              initial='hidden'
+              variants={fadeIn('down', 0.3)}
+              initial={initial}
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='text-[55px] font-bold leading-[0.8] lg:text-[100px]'
@@ -49,8 +37,8 @@ const Banner = () => {
             </motion.h1>
             {/* I am type aimation */}
             <motion.div
-              variants={fadeIn(dir, 0.4)}
-              initial='hidden'
+              variants={fadeIn('down', 0.4)}
+              initial={initial}
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
@@ -72,8 +60,8 @@ const Banner = () => {
             </motion.div>
             {/* Subtext */}
             <motion.p
-              variants={fadeIn(dir, 0.5)}
-              initial='hidden'
+              variants={fadeIn('down', 0.5)}
+              initial={initial}
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
@@ -81,8 +69,8 @@ const Banner = () => {
             </motion.p>
             {/* Buttons */}
             <motion.div
-              variants={fadeIn(dir, 0.5)}
-              initial='hidden'
+              variants={fadeIn('down', 0.5)}
+              initial={initial}
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
@@ -102,8 +90,8 @@ const Banner = () => {
             </motion.div>
             {/* socials */}
             <motion.div
-              variants={fadeIn(dir, 0.7)}
-              initial='hidden'
+              variants={fadeIn('down', 0.7)}
+              initial={initial}
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[25px] gap-x-8 max-w-max mx-auto lg:mx-0'>
@@ -124,10 +112,10 @@ const Banner = () => {
           {/* image */}
           <motion.div
             variants={fadeIn('up', 0.5)}
-            initial='hidden'
+            initial={initial}
             whileInView={'show'}
-            className=' lg:flex flex-1 max-w-[200px] lg:max-w-[482px]'>
-            <img src={Image} alt='image' />
+            className=' lg:flex flex-1 min-h-[214px] max-w-[200px] lg:max-w-[482px]'>
+            <img src={Image} alt='Engineer Sohaib Ahmad' />
           </motion.div>
         </div>
       </div>
