@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 // img
-import img1 from '../assets/AI Doggo.png';
-import img2 from '../assets/Ecommerce React.png';
-import img3 from '../assets/Visme JS.png';
+import img1 from '../assets/AI Doggo.webp';
+import img2 from '../assets/Ecommerce React.webp';
+import img3 from '../assets/Visme JS.webp';
 
 const Work = () => {
   return (

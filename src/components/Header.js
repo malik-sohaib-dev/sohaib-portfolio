@@ -1,6 +1,6 @@
 import React from 'react';
 // images
-import Logo from '../assets/my logo.svg';
+import Logo from '../assets/logo.webp';
 // link
 import { Link } from 'react-scroll';
 

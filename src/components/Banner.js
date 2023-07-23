@@ -1,6 +1,6 @@
 import React from 'react';
 // Profile Image
-import Image from '../assets/my3.svg'
+import Image from '../assets/avatar.webp'
 // icons
 import { FaGithub, FaLinkedin, FaDribbble, } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md'
