@@ -3,6 +3,7 @@ import React from 'react';
 import Image from '../assets/my3.svg'
 // icons
 import { FaGithub, FaLinkedin, FaDribbble, } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md'
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -115,11 +116,14 @@ const Banner = () => {
               <a href='https://dribbble.com/Sohaib_Ahmad_7' target='_blank'>
                 <FaDribbble />
               </a>
+              <a href="mailto:maliksohaib.official@gmail.com" target='_blank'>
+                <MdEmail />
+              </a>
             </motion.div>
           </div>
           {/* image */}
           <motion.div
-            variants={fadeIn('down', 0.5)}
+            variants={fadeIn('up', 0.5)}
             initial='hidden'
             whileInView={'show'}
             className=' lg:flex flex-1 max-w-[200px] lg:max-w-[482px]'>
