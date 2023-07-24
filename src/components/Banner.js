@@ -33,7 +33,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='text-[55px] font-bold leading-[0.8] lg:text-[100px]'
             >
-              SOHIAB <span>AHMAD</span>
+              SOHAIB <span>AHMAD</span>
             </motion.h1>
             {/* I am type aimation */}
             <motion.div
