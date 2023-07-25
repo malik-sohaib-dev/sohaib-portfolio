@@ -93,6 +93,7 @@ const Work = () => {
               </div>
             </a>
             {/* Project 3 */}
+            <a href='https://visme-clone.vercel.app' target='_blank'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -116,6 +117,7 @@ const Work = () => {
                 <span className='text-sm lg:text-3xl text-white '>Visme clone with pure HTML, CSS & JS</span>
               </div>
             </div>
+            </a>
           </motion.div>
         </div>
       </div>
