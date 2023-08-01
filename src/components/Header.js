@@ -1,6 +1,9 @@
 import React from 'react';
 // images
 import Logo from '../assets/logo.webp';
+// CV
+import CV from '../assets/#Sohaib Ahmad CV.pdf';
+
 // link
 import { Link } from 'react-scroll';
 
@@ -13,12 +16,10 @@ const Header = () => {
           <img src={Logo} alt='logo' />
         </a>
         {/* button */}
-        <Link
-          to='contact'
-          smooth={true}
-        >
-          <button className='btn btn-sm'>Work with me</button>
-        </Link>
+        <a href={CV} download="#Sohaib-Ahmad-CV"
+        target="_blank" rel="noreferrer">
+          <button className='btn btn-sm'>Get My CV</button>
+        </a>
       </div>
     </div>
   </header>;
