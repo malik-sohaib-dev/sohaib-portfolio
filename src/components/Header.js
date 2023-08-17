@@ -16,7 +16,7 @@ const Header = () => {
           <img src={Logo} alt='logo' />
         </a>
         {/* button */}
-        <a href={CV} download="Sohaib-Ahmad-CV"
+        <a href={CV} download="Sohaib-Ahmad-CV.pdf"
         target="_blank" rel="noreferrer">
           <button className='btn btn-sm'>Get My CV</button>
         </a>

@@ -65,7 +65,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              Empower Your Brand's Story and unleash the Power of Frontend Design, Tailored to Enchant and Captivate Your Customers.
+              Empower Your Brand's Story and unleash the Power of Web Design, Tailored to Enchant and Captivate Your Customers.
             </motion.p>
             {/* Buttons */}
             <motion.div
