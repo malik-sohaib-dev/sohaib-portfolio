@@ -27,11 +27,6 @@ import { deviceContext } from '../contexts/deviceContext';
 
 
 const Work = () => {
-  // Deployed:
-  // 1- Portfolio https://www.engrsohaib.me/
-  // 3- Visme co landing page https://visme-clone.vercel.app/
-  // 6- MERN Todo https://mern-todo-sohaib.vercel.app/
-
   const Projects = [
     {
       category: 'Full Stack',
@@ -101,7 +96,7 @@ const Work = () => {
                 Work.
               </h2>
               <p className='max-w-lg mb-8'>
-                From the depths of coding to the heights of design, my portfolio showcases a versatile range of skills in React, Tailwind, JavaScript, HTML, CSS, APIs, Webforms, Routing, Figma designing, brand identity creation, and beyond.
+                From the depths of coding to the heights of design, my portfolio showcases a versatile range of skills in React, MERN, Next.js, PostgreSql, Tailwind, JS, HTML, CSS, APIs, programmed graphics, Chart.js, Figma designing, brand identity creation, and beyond.
               </p>
               <a target='_blank' href='https://linkedin.com/in/engr-sohaib'><button className='btn btn-sm '>View All Projects</button></a>
             </div>

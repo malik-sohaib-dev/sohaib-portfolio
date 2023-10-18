@@ -14,7 +14,7 @@ import { deviceContext } from '../contexts/deviceContext';
 const services = [
   {
     name: 'Web Development',
-    description: 'With my robust expertise in MERN, Firebase, Tailwind, JavaScript, HTML, CSS, Active Campaign, and beyond, I have the power to propel your business into the thriving online realm.',
+    description: 'With my robust expertise in HTML, CSS, JS, TS, MERN, Next.js, PostgreSql, Firebase, Tailwind, Active Campaign, and beyond, I have the power to propel your business into the thriving online realm.',
     link: 'https://github.com/SohaibA786',
   },
   {
