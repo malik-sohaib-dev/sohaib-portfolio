@@ -7,15 +7,15 @@ import { fadeIn } from '../variants';
 // import img1 from '../assets/AI Doggo.webp';
 // import img2 from '../assets/Ecommerce React.webp';
 // import img3 from '../assets/Visme JS.webp';
-import img1 from '../assets/projects/Cfored.png';
-import img2 from '../assets/projects/Promptswap.png';
-import img3 from '../assets/projects/Pricewatch.png';
-import img4 from '../assets/projects/Photopia.png';
-import img5 from '../assets/projects/Ecommerce React.png';
-import img6 from '../assets/projects/Visme JS.png';
-import img7 from '../assets/projects/MERN Todo.png';
-import img8 from '../assets/projects/AI Doggo.png';
-import img9 from '../assets/projects/BH Group.png';
+import img1 from '../assets/projects/Cfored.webp';
+import img2 from '../assets/projects/Promptswap.webp';
+import img3 from '../assets/projects/Pricewatch.webp';
+import img4 from '../assets/projects/Photopia.webp';
+import img5 from '../assets/projects/Ecommerce React.webp';
+import img6 from '../assets/projects/Visme JS.webp';
+import img7 from '../assets/projects/MERN Todo.webp';
+import img8 from '../assets/projects/AI Doggo.webp';
+import img9 from '../assets/projects/BH Group.webp';
 
 
 
