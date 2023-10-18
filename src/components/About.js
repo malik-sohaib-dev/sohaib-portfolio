@@ -49,7 +49,7 @@ const About = () => {
             </h3>
             {/* About me Text */}
             <p className='mb-6 text-justify'>
-              For the past year, I've been remotely working as Lead Developer with an American Organization <a target='_blank' className='text-accent font-bold' href='https://cfored.ac-page.com/landing-page-ac#'>CED</a>. Additionally I'm providing my services on freelance platforms which include but are not limited to web development, UX/UI designing,  embedded systems programming, IOT solutions, 3D modeling and simulations.<br />
+              Currently I'm working as a Full Stack Developer with <a target='_blank' className='text-accent font-bold' href='https://bhgroup.com.pk/'>BH Group</a>, a UK based company in Lahore, where I'm emplying my expertise to develop PV Smith Solar Simulator and Design web app. Additionally I'm providing my services on freelance platforms which include but are not limited to web development, Generative AI, UX/UI designing, 3D modeling and simulations.<br />
               {/* Bars 🔥 */}
               <span className='text-gradient text-[15px] text-center block'>
                 Engineering is my superpower, and I wield it with style<br />
